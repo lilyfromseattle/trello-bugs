@@ -1,0 +1,53 @@
+body {
+  /*color: dimgrey;*/
+  /*padding: 0;*/
+
+}
+
+h3 {
+  font-family: 'Francois One';
+  color: white;
+}
+.title-text {
+  opacity: .7;
+}
+
+.date {
+  opacity: 1;
+}
+
+h1 {
+  font-family: 'Francois One';
+  /*color: #0078bd;*/
+  color: white;
+  /*font-weight: lighter;*/
+}
+.title-div {
+  background: #0078bd;
+  margin-top: -20px;
+  /*height: 100px;*/
+  padding: 22px 0px 20px 0px;
+}
+
+td:last-child {
+  background: whitesmoke;
+}
+tr:last-child {
+  background: whitesmoke;
+}
+
+td {
+    font-size: 1.2em;
+}
+
+.form-control {
+  margin-top: 20px;
+}
+
+.form-group {
+  width: 400px;
+}
+
+.btn {
+  margin-top :20px
+}

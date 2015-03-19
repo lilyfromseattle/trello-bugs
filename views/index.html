@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script src='http://code.jquery.com/jquery-2.1.0.min.js'></script>
+  <link rel='stylesheet' type = 'text/css' href='css/bootstrap.min.css'>
+  <link rel='stylesheet' type = 'text/css' href='css/main.css'>
+  <link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+  <title>{{ title }}</title>
+  </head>
+
+  <body>
+
+    <div class = 'title-div'><h1 class = 'text-center'>{{ title }}</h1></div>
+    <div class = 'form-group center-block'>
+      <form method = 'post' action = '/' id = 'dateinput'>
+        <input type='text' name='startdate' class = 'form-control' placeholder = 'Start Date'>
+        <input type='text' name='enddate' class = 'form-control' placeholder = 'End Date'>
+        <input type='submit' class='btn btn-default center-block'>
+      </form>
+    </div>
+
+  </body>
+</html>
