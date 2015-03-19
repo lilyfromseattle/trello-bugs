@@ -24,7 +24,7 @@ describe('test CompareIds', function(){
                    { dateLastActivity: '2015-03-10T20:44:53.901Z',
                      idLabels: ['54db994974d650d56743c542'] } ] },
 
-        outputs: { 'They Caught': 1, Total: 0 }
+        outputs: { 'They Caught': 1, Total: 1 }
     }
   ];
 

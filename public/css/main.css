@@ -1,8 +1,5 @@
-body {
-  /*color: dimgrey;*/
-  /*padding: 0;*/
-
-}
+/*BLUE: #0078bd*/
+/*FONT: 'Francois One'*/
 
 h3 {
   font-family: 'Francois One';
@@ -18,14 +15,11 @@ h3 {
 
 h1 {
   font-family: 'Francois One';
-  /*color: #0078bd;*/
   color: white;
-  /*font-weight: lighter;*/
 }
 .title-div {
   background: #0078bd;
   margin-top: -20px;
-  /*height: 100px;*/
   padding: 22px 0px 20px 0px;
 }
 
