@@ -1,6 +1,5 @@
 var mocha = require('mocha');
 var assert = require('assert');
-var describe = require('describe');
 
 var trello = require('../trello.js');
 

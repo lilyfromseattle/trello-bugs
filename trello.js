@@ -26,12 +26,9 @@ function makeRequestToTrello(path, callback){
 
 var env = require('node-env-file');
 
-env(__dirname + '/.env');
-assert.equal(process.env.FOO, "defaultfoo");
-assert.equal(process.env.BAR, "bar1");
-
 var token = process.env.TOKEN
 var key = process.env.KEY
+
 var board_id = process.env.BOARD_ID
 var getParams = "?key="+key+"&token="+token;
 
