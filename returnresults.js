@@ -14,5 +14,5 @@ function generateSpreadsheet(frequencies) {
 
 module.exports.printResults = printResults;
 function printResults(frequencies) {
-  console.log(frequencies)
+  console.log(frequencies);
 }

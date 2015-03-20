@@ -1,7 +1,7 @@
-var async = require('async')
-var board_id = "t8hXGU8J"
-var trello = require('./trello.js')
-var return_results = require('./returnresults.js')
+var async = require('async');
+var board_id = "t8hXGU8J";
+var trello = require('./trello.js');
+var return_results = require('./returnresults.js');
 
 // var optimist = require('optimist')
 //     .usage("Usage: $0 -s [start] -e [end]")
@@ -34,7 +34,7 @@ function getResults(start, end, callback) {
     var frequencies = trello.compareIds(results.labels, results.cards, start, end);
     // return_results.printResults(frequencies);
     // return_results.generateSpreadsheet(frequencies);
-    callback(frequencies)
+    callback(frequencies);
   });
   // callback(frequencies)
 }

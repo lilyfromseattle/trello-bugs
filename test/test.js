@@ -35,16 +35,16 @@ describe('test CompareIds', function(){
 
         it('should return the correct tally for all bug types', function(){
             assert.equal(test.outputs[key], results[key]);
-        })
+        });
 
         it('returns the correct bug types', function(){
             assert.equal(test.outputs[test.outputs[key]], results[results[key]]);
-        })
+        });
 
-      })
+      });
     }
-  })
-})
+  });
+});
 
 describe('test filterCards', function(){
   var filterCardsTests = [
@@ -81,12 +81,12 @@ describe('test filterCards', function(){
 
        it('should only return cards within the date range given', function(){
             assert.equal(1, test.outputs[key][0] == results[key][0]);
-        })
+        });
 
-      })
+      });
     }
-  })
-})
+  });
+});
 
 
 describe('test filterLabels', function(){
@@ -125,9 +125,9 @@ describe('test filterLabels', function(){
        var results = trello.filterLabels(test.inputs.labels);
        it("should only return labels containing the string 'bug'", function(){
             assert.equal(1, test.outputs[0][key] == results[key]);
-        })
+        });
 
-      })
+      });
     }
-  })
-})
+  });
+});
