@@ -9,3 +9,7 @@ node_js:
 notifications:
   email:
     - lilyfpace@gmail.com
+
+deploy:
+  provider: heroku
+  api_key: "15adb709-7273-4d90-9513-5b5f9ee5a9db"
