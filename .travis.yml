@@ -10,7 +10,7 @@ notifications:
   email:
     recipients:
       - lilyfpace@gmail.com
-      irc: "irc.freenode.org##thejavascripts"
+  irc: "irc.freenode.org##thejavascripts"
 
 deploy:
   provider: heroku
