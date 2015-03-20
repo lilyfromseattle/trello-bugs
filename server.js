@@ -15,26 +15,6 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 }));
 
 app.get('/', function(request, response){
-//   response.send('\
-//   <!DOCTYPE html>\
-//   <html>\
-//     <head>\
-//       <title>{{ title }}</title>\
-//     </head>\
-// \
-//     <body>\
-// \
-//       <h1>{{ title }}</h1>\
-// \
-//       <form method = "post" action = "/" id = "dateinput">\
-//         <input type="text" name="startdate" placeholder = "Start Date">\
-//         <input type="text" name="enddate" placeholder = "End Date">\
-//       <input type="submit">\
-//   </form>\
-// \
-//     </body>\
-//   </html>'
-
   var options = {title: "Trello Bug Counter"}
   var indexTemplate = fs.readFileSync('./views/index.html').toString();
   var html = mustache.render(indexTemplate, options);
