@@ -23,15 +23,22 @@ app.get('/', function(request, response){
 var bugs = require('./bugs.js');
 app.post('/', function(request, response){
   bugs.getResults(JSON.stringify(request.body.startdate), JSON.stringify(request.body.enddate), function(data){
-    var options = {start: JSON.stringify(request.body.startdate).replace(/"/g,""), end: JSON.stringify(request.body.enddate).replace(/"/g,"")};
+    var table_content = [];
     var resultsTemplate = fs.readFileSync('./views/results.html').toString();
+    console.log(data);
     Object.keys(data).forEach(function(key){
-      resultsTemplate += "<tr><td class = 'text-center'>"+key+"</td> <td class = 'text-center'>"+data[key]+"</td></tr>";
+      table_content.push({"name": key, "frequency": data[key]});
     });
-    resultsTemplate += "</table></body></html>";
-
+    // resultsTemplate += "</table></body></html>";
+  //   table_content.push( "name": function () {
+  //   return this.firstName + " " + this.lastName;
+  // })
+  console.log(table_content);
+    var options = {start: JSON.stringify(request.body.startdate).replace(/"/g,""), end: JSON.stringify(request.body.enddate).replace(/"/g,""), stuff: table_content};
+    console.log(options)
     var html = mustache.render(resultsTemplate, options);
     response.send(html);
+    console.log('HELLO')
   });
 });
 

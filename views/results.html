@@ -10,7 +10,14 @@
 
   <body>
 
-    <div class = 'title-div'><h3 class = 'text-center'><span class = 'title-text'>Bugs found between </span><span class = 'date'>{{ start }}</span><span class = 'title-text'> and </span><span class = 'date'>{{ end }}</span></h3></div>
+    <div class = 'title-div'><h3 class = 'text-center'><span class = 'title-text'>Bugs found between </span><span class = 'date'>{{ start }}</span><span class = 'title-text'> and </span><span class = 'date'>{{ end }}</span></h3></div></div>
     <!-- <hr> -->
     <!-- <div id = 'list-div' class = 'center-block'> -->
       <table class = 'table table-responsive'>
+
+        {{ #stuff }}
+        <tr><td class = 'text-center'>  {{ name }}  </td> <td class = 'text-center'> {{ frequency }}</td></tr>
+        {{ /stuff }}
+      </table>
+  </body>
+</html>
