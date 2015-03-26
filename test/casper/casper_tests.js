@@ -12,16 +12,15 @@ casper.test.begin('Trello Bug counter has working form', function suite(test) {
       }, true);
   });
 
-  casper.then(function() {
-      this.test.assertTitle("", 'no title for results page yet!');
-      // this.test.assertUrlMatch(/q=foo/, 'search term has been submitted');
-      this.test.assertTextExists('Total', 'page body contains "total"');
-      this.test.assertVisible('h3.text-center');
-      this.test.assertExists('div.title-div');
-      this.test.assertEval(function() {
-          return __utils__.findAll('td.text-center').length >= 8;
-      }, 'search for bugs retrieves 8 or more results');
-  });
+  // casper.then(function() {
+  //     this.test.assertTitle("", 'no title for results page yet!');
+  //     this.test.assertTextExists('Total', 'page body contains "total"');
+  //     this.test.assertVisible('h3.text-center');
+  //     this.test.assertExists('div.title-div');
+  //     this.test.assertEval(function() {
+  //         return __utils__.findAll('td.text-center').length >= 8;
+  //     }, 'search for bugs retrieves 8 or more results');
+  // });
 });
 casper.run(function() {
     this.test.renderResults(true);
