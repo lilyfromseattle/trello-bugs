@@ -29,6 +29,9 @@ var env = require('node-env-file');
 var token = process.env.TOKEN;
 var key = process.env.KEY;
 
+console.log("KEY KEY KEY")
+console.log(key)
+
 var board_id = process.env.BOARD_ID;
 var getParams = "?key="+key+"&token="+token;
 
