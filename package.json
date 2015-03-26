@@ -29,9 +29,9 @@
   },
   "scripts": {
 
-    "test": "npm run casper-test && npm run mocha-test",
-    "casper-test": "casperjs test/casper/casper_tests.js",
-    "mocha-test": "mocha test/mocha/test.js"
+    "test": "npm run mocha-test && npm run casper-test",
+    "mocha-test": "mocha test/mocha/test.js",
+    "casper-test": "casperjs test/casper/casper_tests.js"
 
   }
 }
