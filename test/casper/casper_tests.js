@@ -24,5 +24,7 @@ casper.test.begin('Trello Bug counter has working form', function suite(test) {
   // });
 });
 casper.run(function() {
-    this.test.renderResults(true);
+  this.test.done(1);
+  this.test.renderResults(true);
+
 });
