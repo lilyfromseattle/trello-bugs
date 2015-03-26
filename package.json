@@ -30,7 +30,7 @@
   "scripts": {
 
     "test": "npm run casper-test && npm run mocha-test",
-    "casper-test": "casper test/casper/casper_tests.js",
+    "casper-test": "casperjs test/casper/casper_tests.js",
     "mocha-test": "mocha test/mocha/test.js"
 
   }
