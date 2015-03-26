@@ -21,12 +21,13 @@
     "node-env-file": "^0.1.7",
     "optimist": "0.6.1",
     "mocha-casperjs": "0.5.3"
-
   },
   "devDependencies": {
-    "mocha": "0.3.x"
+    "casperjs": "^1.1.0-beta3",
+    "mocha": "0.3.x",
+    "mocha-casperjs": "^0.5.3"
   },
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "./node_modules/mocha-casperjs/bin/mochacasper-js"
   }
 }

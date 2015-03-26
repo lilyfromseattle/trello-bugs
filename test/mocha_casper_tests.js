@@ -1,4 +1,4 @@
-describe('Google searching', function() {
+describe('Trello Bug Counter interface', function() {
   before(function() {
     casper.start('http://trello-bug-counter.herokuapp.com');
   });
