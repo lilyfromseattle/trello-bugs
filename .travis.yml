@@ -15,9 +15,7 @@ before_install:
 before_script:
   - phantomjs --version
   - casperjs --version
-script:
-  -mocha test/mocha/test.js
-  -casperjs tests/casper_tests.js "http://localhost:5000"
+script:  casperjs tests/casper_tests.js "http://localhost:5000"
 
 deploy:
   provider: heroku
