@@ -15,16 +15,16 @@ before_install:
 before_script:
   - phantomjs --version
   - casperjs --version
-  deploy:
-    provider: heroku
-    api_key:
-      secure: OoUlijdVHfqXuzbic384T0eZdXv5JREbZDB/ueG5VrL9pL5KbxCIY7rZcTfemt3kwcQkBsBmT+5KJPT6exdmu6nkpKdr+VtPCPNf59nCIEdG1SaVPggQmtP97ggqfzH2j7GqJxMO8PcoDzaaF2pCXo6wQlH3skN2TZEzgAd20eU=
-    app: trello-bug-counter
-    on:
-      repo: lilyfromseattle/trello-bugs
-    env:
-      global:
-        -  secure: "AA1MxrM6ZEsgMDuAvXFrfy7+9Iz4YdXtzjyWt4ViPCQr0ILdyCkGuTXjoWYbfGi/thNtNsx/QUekJlgcdTXC4pNyJTE1yDeOJ4sLk2zWIrP10nQc4SyJNO4hKL9ZiaOTkFdPmV3zn/1OrZh3NuvXoQRzjNfq5oU4VKChcxWltOA="
+deploy:
+  provider: heroku
+  api_key:
+    secure: OoUlijdVHfqXuzbic384T0eZdXv5JREbZDB/ueG5VrL9pL5KbxCIY7rZcTfemt3kwcQkBsBmT+5KJPT6exdmu6nkpKdr+VtPCPNf59nCIEdG1SaVPggQmtP97ggqfzH2j7GqJxMO8PcoDzaaF2pCXo6wQlH3skN2TZEzgAd20eU=
+  app: trello-bug-counter
+  on:
+    repo: lilyfromseattle/trello-bugs
+  env:
+    global:
+      -  secure: "AA1MxrM6ZEsgMDuAvXFrfy7+9Iz4YdXtzjyWt4ViPCQr0ILdyCkGuTXjoWYbfGi/thNtNsx/QUekJlgcdTXC4pNyJTE1yDeOJ4sLk2zWIrP10nQc4SyJNO4hKL9ZiaOTkFdPmV3zn/1OrZh3NuvXoQRzjNfq5oU4VKChcxWltOA="
 notifications:
   email:
     recipients:
