@@ -15,6 +15,7 @@ before_install:
 before_script:
   - phantomjs --version
   - casperjs --version
+  - npm start
 deploy:
   provider: heroku
   api_key:
