@@ -12,9 +12,9 @@ before_install:
   - git checkout tags/1.0.2
   - export PATH=$PATH:`pwd`/bin
   - cd -
-before_script:
   - node server
   - sleep 3
+before_script:
   - phantomjs --version
   - casperjs --version
 deploy:
