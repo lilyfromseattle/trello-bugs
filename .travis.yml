@@ -17,6 +17,10 @@ before_script:
   - sleep 10
   - phantomjs --version
   - casperjs --version
+script:
+  -mocha test/mocha/test.js
+  -casperjs tests/casper_tests.js "http://localhost:5000"
+
 deploy:
   provider: heroku
   api_key:
