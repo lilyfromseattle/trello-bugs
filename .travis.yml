@@ -12,12 +12,9 @@ before_install:
   - git checkout tags/1.0.2
   - export PATH=$PATH:`pwd`/bin
   - cd -
-after_install:
+before_script:
   - phantomjs --version
   - casperjs --version
-before_script:
-  - node server
-  - sleep 10
 deploy:
   provider: heroku
   api_key:
