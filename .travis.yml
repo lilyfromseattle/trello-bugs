@@ -12,9 +12,8 @@ before_install:
   - git checkout tags/1.0.2
   - export PATH=$PATH:`pwd`/bin
   - cd -
-after_install:
-  - npm start
 before_script:
+  - npm start
   - phantomjs --version
   - casperjs --version
 deploy:
