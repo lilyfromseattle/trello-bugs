@@ -28,9 +28,9 @@
     "mocha-casperjs": "^0.5.3"
   },
   "scripts": {
-    "start": "node server",
-    "test": "npm run mocha-test && npm run casper-test",
+    "test": "npm run mocha-test && start && npm run casper-test",
     "mocha-test": "mocha test/mocha/test.js",
+    "start": "node server",
     "casper-test": "casperjs test/casper/casper_tests.js"
 
   }

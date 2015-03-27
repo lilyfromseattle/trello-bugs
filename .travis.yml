@@ -13,10 +13,10 @@ before_install:
   - export PATH=$PATH:`pwd`/bin
   - cd -
 before_script:
+  - npm start
+  - sleep 10
   - phantomjs --version
   - casperjs --version
-script:  casperjs tests/casper_tests.js "http://localhost:5000"
-
 deploy:
   provider: heroku
   api_key:
