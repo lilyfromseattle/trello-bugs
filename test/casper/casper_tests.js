@@ -1,7 +1,7 @@
 var casper = require('casper').create();
 phantom.casperTest = true;
 
-casper.test.begin('Trello Bug counter has working form', function suite(test) {
+casper.test.begin('Trello Bug counter has working form',8, function suite(test) {
   casper.start('http://trello-bug-counter.herokuapp.com', function() {
     test.assert(true, "true's true");
       this.test.assertTextExists('Trello', 'page body contains "trello"');
