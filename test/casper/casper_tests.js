@@ -1,6 +1,7 @@
 var process = require('system').env;
 var testURI = (process.server_uri) ? process.server_uri : "http://localhost:5000";
 var casper = require('casper').create();
+console.log(testURI);
 phantom.casperTest = true;
 
 casper.test.begin('Trello Bug counter has working form',9, function suite(test) {
