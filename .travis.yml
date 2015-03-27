@@ -24,7 +24,7 @@ deploy:
     repo: lilyfromseattle/trello-bugs
   env:
     global:
-      -  secure: "AA1MxrM6ZEsgMDuAvXFrfy7+9Iz4YdXtzjyWt4ViPCQr0ILdyCkGuTXjoWYbfGi/thNtNsx/QUekJlgcdTXC4pNyJTE1yDeOJ4sLk2zWIrP10nQc4SyJNO4hKL9ZiaOTkFdPmV3zn/1OrZh3NuvXoQRzjNfq5oU4VKChcxWltOA="
+      -  secure: {{ENCRYPTED_server_uri}}
 notifications:
   email:
     recipients:
