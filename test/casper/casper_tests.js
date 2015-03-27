@@ -1,8 +1,9 @@
+var testURI = (process.env.server_uri) ? process.env.server_uri : "http://localhost:5000";
 var casper = require('casper').create();
 phantom.casperTest = true;
 
 casper.test.begin('Trello Bug counter has working form',9, function suite(test) {
-  casper.start('http://trello-bug-counter.herokuapp.com', function() {
+  casper.start(testURI, function() {
     test.assert(true, "true's true");
       this.test.assertTextExists('Trello', 'page body contains "trello"');
       this.test.assertTitle("Trello Bug Counter", 'Trello Bug Counter homepage title is the one expected');
