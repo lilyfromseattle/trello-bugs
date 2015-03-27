@@ -14,6 +14,7 @@ before_install:
   - cd -
 before_script:
   - node server
+  - sleep 3
   - phantomjs --version
   - casperjs --version
 deploy:
