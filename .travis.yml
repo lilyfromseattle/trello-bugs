@@ -17,7 +17,7 @@ after_install:
   - casperjs --version
 before_script:
   - node server
-  - sleep 3
+  - sleep 10
 deploy:
   provider: heroku
   api_key:
