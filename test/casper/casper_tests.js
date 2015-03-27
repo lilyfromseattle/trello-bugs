@@ -14,9 +14,9 @@ casper.test.begin('Trello Bug counter has working form', function suite(test) {
   });
 
   casper.then(function() {
-      this.test.assertTitle("", 'no title for results page yet!');
       this.test.assertTextExists('Total', 'page body contains "total"');
       this.test.assertVisible('h3.text-center');
+      this.test.assertTitle("Results - ", 'no title for results page yet!');
       this.test.assertExists('div.title-div');
       this.test.assertEval(function() {
           return __utils__.findAll('td.text-center').length >= 8;
