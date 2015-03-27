@@ -1,5 +1,5 @@
-var process = require('system');
-var testURI = (process.env.server_uri) ? process.env.server_uri : "http://localhost:5000";
+var process = require('system').env;
+var testURI = (process.server_uri) ? process.server_uri : "http://localhost:5000";
 var casper = require('casper').create();
 phantom.casperTest = true;
 
