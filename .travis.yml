@@ -11,6 +11,7 @@ before_install:
   - cd ~/casperjs
   - git checkout tags/1.0.2
   - export PATH=$PATH:`pwd`/bin
+  - node server
   - cd -
 before_script:
   - phantomjs --version
@@ -24,7 +25,7 @@ deploy:
     repo: lilyfromseattle/trello-bugs
   env:
     global:
-      -  secure: {{ENCRYPTED_server_uri}}
+      -  secure: {{ ENCRYPTED_server_uri }}
 notifications:
   email:
     recipients:
