@@ -44,6 +44,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-ghost');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.registerTask('default', 'mochaTest');
-  grunt.registerTask('test', ['mocha', 'connect', 'ghost']);
+  grunt.registerTask('test', ['mochaTest', 'connect', 'ghost']);
 	grunt.registerTask('default', ['connect']);
 };
