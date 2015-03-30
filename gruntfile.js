@@ -41,10 +41,10 @@ module.exports = function(grunt) {
 			}
 		}
 	});
-	grunt.loadNpmTasks('grunt-ghost');
+	// grunt.loadNpmTasks('grunt-ghost');
   grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-mocha-test');
   // grunt.registerTask('default', 'mochaTest');
-  grunt.registerTask('test', ['mochaTest', 'connect', 'ghost']);
+  grunt.registerTask('test', ['mochaTest', 'connect']);
 	grunt.registerTask('default', ['connect']);
 };
