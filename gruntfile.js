@@ -32,7 +32,7 @@ module.exports = function(grunt) {
 
 			ghost: {
   			dist: {
-    			filesSrc: ['tests/casper/casper_tests.js'],
+    			filesSrc: ['test/casper/casper_tests.js'],
 
 
 
