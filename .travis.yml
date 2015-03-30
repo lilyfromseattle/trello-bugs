@@ -13,8 +13,6 @@ before_install:
   - export PATH=$PATH:`pwd`/bin
   - cd -
 before_script:
-  - npm start
-  - sleep 10
   - phantomjs --version
   - casperjs --version
 deploy:
