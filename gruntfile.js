@@ -14,15 +14,13 @@ module.exports = function(grunt) {
         },
 
 
-        connect: {
-	         server: {
-		           options: {
-										hostname: "localhost",
-			              base: '/home/travis/build/lilyfromseattle/trello-bugs/',
-			              port: 5000
-		                }
-	              }
-              },
+				express: {
+				    options: {
+				      // Override defaults here
+							script: 'server.js',
+							port: 5000,
+				    },
+				  },
 
 		// ghost: {
 		// 	test: {
@@ -62,8 +60,9 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-casperjs');
   grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-mocha-test');
+	grunt.loadNpmTasks('grunt-express-server');
   // grunt.registerTask('default', 'mochaTest');
-  grunt.registerTask('test', ['mochaTest', 'connect', 'casperjs']);
+  grunt.registerTask('test', ['mochaTest', 'express', 'casperjs']);
 	// grunt.log.writeln('!!!!!!!!!!!!Starting static web server on ' + options.hostname + ':' + options.port + '.');
-	grunt.registerTask('default', ['connect']);
+	grunt.registerTask('default', ['express']);
 };
