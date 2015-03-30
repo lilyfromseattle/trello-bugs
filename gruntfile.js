@@ -18,7 +18,7 @@ module.exports = function(grunt) {
 	         server: {
 		           options: {
 										hostname: "localhost",
-			              base: 'trello-bugs',
+			              base: './',
 			              port: 5000
 		                }
 	              }
