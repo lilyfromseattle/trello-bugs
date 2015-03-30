@@ -18,7 +18,7 @@ module.exports = function(grunt) {
 	         server: {
 		           options: {
 										hostname: "localhost",
-			              base: '/home/travis/build/lilyfromseattle/trello-bugs/views/index.html',
+			              base: '',
 			              port: 5000
 		                }
 	              }
