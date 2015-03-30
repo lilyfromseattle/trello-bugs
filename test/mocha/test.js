@@ -3,6 +3,8 @@ var assert = require('assert');
 
 var trello = require('../../trello.js');
 
+console.log(__dirname);
+
 describe('test CompareIds', function(){
   var compareIdTests = [
     {
