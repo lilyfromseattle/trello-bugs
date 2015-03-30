@@ -15,6 +15,7 @@ module.exports = function(grunt) {
 
 
         connect: {
+					 keepalive: true,
 	         server: {
 		           options: {
 										hostname: "localhost",
