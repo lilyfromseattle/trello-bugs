@@ -1,5 +1,5 @@
 var process = require('system').env;
-var testURI = (process.server_uri) ? process.server_uri : "http://localhost:5000";
+var testURI = (process.server_uri) ? process.server_uri : "http://0.0.0.0:5000";
 // var testURI = "http://trello-bug-counter.herokuapp.com";
 // var casper = require('casper').create();
 console.log(testURI);
@@ -10,7 +10,6 @@ phantom.casperTest = true;
 casper.test.begin('Trello Bug counter has working form',9, function suite(test) {
   casper.start(testURI, function() {
     // test.assert(true, "true's true");
-    console.log(this.toString());
       this.test.assertTextExists('Trello', 'page body contains "trello"');
       this.test.assertTitle("Trello Bug Counter", 'Trello Bug Counter homepage title is the one expected');
       this.test.assertExists('form[action="/"]', 'date form is found');
