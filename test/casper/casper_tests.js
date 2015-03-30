@@ -7,7 +7,7 @@ console.log("HEY!");
 // console.log(process.server_uri);
 phantom.casperTest = true;
 
-casper.test.begin('Trello Bug counter has working form',9, function suite(test) {
+casper.test.begin('Trello Bug counter has working form',1, function suite(test) {
   casper.start(testURI, function() {
     test.assert(true, "true's true");
       // this.test.assertTextExists('Trello', 'page body contains "trello"');
@@ -30,7 +30,7 @@ casper.test.begin('Trello Bug counter has working form',9, function suite(test) 
   // });
 });
 casper.run(function() {
-  this.test.done(9);
+  this.test.done(1);
   this.test.renderResults(true);
 
 });
