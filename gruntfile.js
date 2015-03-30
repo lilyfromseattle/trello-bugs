@@ -62,6 +62,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-mocha-test');
   // grunt.registerTask('default', 'mochaTest');
-  grunt.registerTask('test', ['mochaTest', 'connect', 'grunt-casperjs']);
+  grunt.registerTask('test', ['mochaTest', 'connect', 'casperjs']);
 	grunt.registerTask('default', ['connect']);
 };
