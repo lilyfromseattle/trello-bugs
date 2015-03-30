@@ -15,12 +15,12 @@ module.exports = function(grunt) {
 
 
         connect: {
-					 keepalive: true,
 	         server: {
 		           options: {
 										hostname: "localhost",
 			              base: 'source',
-			              port: 5000
+			              port: 5000,
+										keepalive: true
 		                }
 	              }
               },
