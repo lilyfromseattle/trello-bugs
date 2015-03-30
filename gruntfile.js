@@ -29,30 +29,39 @@ module.exports = function(grunt) {
 		// 			src: ['test/casper/casper_tests.js']
 		// 		}]
 		// 	},
+		casperjs: {
+	    options: {
+	      async: {
+	        parallel: false
+	      }
+	    },
+	    files: ['test/casper/casper_tests.js']
+	  },
 
-			ghost: {
-  			dist: {
-    			filesSrc: ['test/casper/casper_tests.js'],
-
-
-
-			options: {
-				args: {
-					baseUrl: 'http://localhost:' +
-						'<%= connect.www.options.port %>/'
-				},
-				direct: false,
-				logLevel: 'error',
-				printCommand: false,
-				printFilePaths: true
-			}
-		}
-	}
+			// ghost: {
+  		// 	dist: {
+    	// 		filesSrc: ['test/casper/casper_tests.js'],
+			//
+			//
+			//
+			// options: {
+			// 	args: {
+			// 		baseUrl: 'http://localhost:' +
+			// 			'<%= connect.www.options.port %>/'
+			// 	},
+			// 	direct: false,
+			// 	logLevel: 'error',
+			// 	printCommand: false,
+			// 	printFilePaths: true
+			// }
+	// 	}
+	// }
 	});
-	grunt.loadNpmTasks('grunt-ghost');
+	// grunt.loadNpmTasks('grunt-ghost');
+	grunt.loadNpmTasks('grunt-casperjs');
   grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-mocha-test');
   // grunt.registerTask('default', 'mochaTest');
-  grunt.registerTask('test', ['mochaTest', 'connect', 'ghost']);
+  grunt.registerTask('test', ['mochaTest', 'connect', 'grunt-casperjs']);
 	grunt.registerTask('default', ['connect']);
 };
