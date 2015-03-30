@@ -26,7 +26,7 @@ module.exports = function(grunt) {
 		// ghost: {
 		// 	test: {
 		// 		files: [{
-		// 			src: ['tests/casper/casper_tests.js']
+		// 			src: ['test/casper/casper_tests.js']
 		// 		}]
 		// 	},
 
