@@ -64,6 +64,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-mocha-test');
   // grunt.registerTask('default', 'mochaTest');
   grunt.registerTask('test', ['mochaTest', 'connect', 'casperjs']);
-	grunt.log.writeln('Starting static web server on ' + options.hostname + ':' + options.port + '.');
+	// grunt.log.writeln('!!!!!!!!!!!!Starting static web server on ' + options.hostname + ':' + options.port + '.');
 	grunt.registerTask('default', ['connect']);
 };
