@@ -23,23 +23,32 @@ module.exports = function(grunt) {
 	              }
               },
 
-		ghost: {
-			test: {
-				files: [{
-					src: ['tests/casper/casper_tests.js']
-				}]
-			},
-			options: {
-				args: {
-					baseUrl: 'http://localhost:' +
-						'<%= connect.www.options.port %>/'
-				},
-				direct: false,
-				logLevel: 'error',
-				printCommand: false,
-				printFilePaths: true
+		// ghost: {
+		// 	test: {
+		// 		files: [{
+		// 			src: ['tests/casper/casper_tests.js']
+		// 		}]
+		// 	},
+
+			ghost: {
+  			dist: {
+    			filesSrc: ['tests/1_userLogin.js','tests/2_userLogout']
+  			}
 			}
-		}
+
+
+
+		// 	options: {
+		// 		args: {
+		// 			baseUrl: 'http://localhost:' +
+		// 				'<%= connect.www.options.port %>/'
+		// 		},
+		// 		direct: false,
+		// 		logLevel: 'error',
+		// 		printCommand: false,
+		// 		printFilePaths: true
+		// 	}
+		// }
 	});
 	grunt.loadNpmTasks('grunt-ghost');
   grunt.loadNpmTasks('grunt-contrib-connect');
