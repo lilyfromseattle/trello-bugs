@@ -10,10 +10,10 @@ phantom.casperTest = true;
 casper.test.begin('Trello Bug counter has working form',1, function suite(test) {
   casper.start(testURI, function() {
     test.assert(true, "true's true");
-      this.test.assertTextExists('Trello', 'page body contains "trello"');
-      this.test.assertTitle("Trello Bug Counter", 'Trello Bug Counter homepage title is the one expected');
-      this.test.assertExists('form[action="/"]', 'date form is found');
-      this.fill('form[action="/"]', {
+    this.test.assertTitle("", 'Trello Bug Counter homepage title is the one expected');
+    this.test.assertTextExists('Trello', 'page body contains "trello"');
+    this.test.assertExists('form[action="/"]', 'date form is found');
+    this.fill('form[action="/"]', {
           startdate: 'January 1, 2012',
           enddate: 'March 15, 2015',
       }, true);
