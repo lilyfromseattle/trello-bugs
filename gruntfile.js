@@ -72,10 +72,7 @@ grunt.registerTask("serve", "foreman", function(){
 	var done = this.async();
 });
   // grunt.registerTask('default', 'mochaTest');
-  grunt.registerTask('test', ['mochaTest', 'casperjs'], function(){
-		// grunt.task.requires("serve");
-		grunt.log.writeln('TESTS EXECUTED!');
-	});
+  grunt.registerTask('test', ['mochaTest', 'casperjs']);
 	// grunt.log.writeln('!!!!!!!!!!!!Starting static web server on ' + options.hostname + ':' + options.port + '.');
 	// grunt.registerTask('default', ['express']);
 };
