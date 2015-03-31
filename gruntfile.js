@@ -13,18 +13,18 @@ module.exports = function(grunt) {
           }
         },
 
-				// foreman: {
-				// 	dev: {
-				// 		port: 5000
-				// 	}
-				// },
-				express: {
-				    options: {
-				      // Override defaults here
-							script: 'server.js',
-							port: 5000,
-				    },
-				  },
+				foreman: {
+					dev: {
+						port: 5000
+					}
+				},
+				// express: {
+				//     options: {
+				//       // Override defaults here
+				// 			script: 'server.js',
+				// 			port: 5000,
+				//     },
+				//   },
 
 		// ghost: {
 		// 	test: {
