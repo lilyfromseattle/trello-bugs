@@ -14,7 +14,6 @@ before_install:
   - export PATH=$PATH:`pwd`/bin
   - cd -
 before_script:
-  -npm start
   - phantomjs --version
   - casperjs --version
   - grunt serve

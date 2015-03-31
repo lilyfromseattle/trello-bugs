@@ -67,7 +67,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-express-server');
 	grunt.loadNpmTasks("grunt-foreman");
 
-// grunt.registerTask("serve", "foreman");
+grunt.registerTask("serve", "foreman");
   // grunt.registerTask('default', 'mochaTest');
   grunt.registerTask('test', ['mochaTest', 'casperjs']);
 	// grunt.log.writeln('!!!!!!!!!!!!Starting static web server on ' + options.hostname + ':' + options.port + '.');
