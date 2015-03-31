@@ -35,6 +35,7 @@
     "mocha-casperjs": "^0.5.3"
   },
   "scripts": {
+    "start": "node server.js",
     "test": "grunt test"
   }
 }
