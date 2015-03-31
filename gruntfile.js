@@ -13,14 +13,18 @@ module.exports = function(grunt) {
           }
         },
 
-
-				express: {
-				    options: {
-				      // Override defaults here
-							script: 'server.js',
-							port: 5000,
-				    },
-				  },
+				foreman: {
+					dev: {
+						port: 5000
+					}
+				},
+				// express: {
+				//     options: {
+				//       // Override defaults here
+				// 			script: 'server.js',
+				// 			port: 5000,
+				//     },
+				//   },
 
 		// ghost: {
 		// 	test: {
@@ -61,8 +65,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-mocha-test');
 	grunt.loadNpmTasks('grunt-express-server');
+	grunt.loadNpmTasks("grunt-foreman");
+
+grunt.registerTask("serve", "foreman");
   // grunt.registerTask('default', 'mochaTest');
-  grunt.registerTask('test', ['mochaTest', 'express', 'casperjs']);
+  grunt.registerTask('test', ['mochaTest', 'casperjs']);
 	// grunt.log.writeln('!!!!!!!!!!!!Starting static web server on ' + options.hostname + ':' + options.port + '.');
 	grunt.registerTask('default', ['express']);
 };
