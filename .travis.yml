@@ -8,6 +8,8 @@ node_js:
 before_install:
 - npm install -g grunt-cli
 - npm install -g mustache
+- npm install
+- npm update
 - git clone git://github.com/n1k0/casperjs.git ~/casperjs
 - cd ~/casperjs
 - git checkout tags/1.0.2
