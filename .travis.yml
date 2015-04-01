@@ -6,40 +6,33 @@ node_js:
 - iojs
 - iojs-v1.0.4
 before_install:
-  - npm install -g grunt-cli
-  - npm install -g mustache
-  - git clone git://github.com/n1k0/casperjs.git ~/casperjs
-  - cd ~/casperjs
-  - git checkout tags/1.0.2
-  - export PATH=$PATH:`pwd`/bin
-  - cd -
+- npm install -g grunt-cli
+- npm install -g mustache
+- git clone git://github.com/n1k0/casperjs.git ~/casperjs
+- cd ~/casperjs
+- git checkout tags/1.0.2
+- export PATH=$PATH:`pwd`/bin
+- cd -
 before_script:
-  - phantomjs --version
-  - casperjs --version
-
+- phantomjs --version
+- casperjs --version
 deploy:
   provider: heroku
   api_key:
-    secure: OoUlijdVHfqXuzbic384T0eZdXv5JREbZDB/ueG5VrL9pL5KbxCIY7rZcTfemt3kwcQkBsBmT+5KJPT6exdmu6nkpKdr+VtPCPNf59nCIEdG1SaVPggQmtP97ggqfzH2j7GqJxMO8PcoDzaaF2pCXo6wQlH3skN2TZEzgAd20eU=
+    secure: AfPhyo0p2U1AyQiRJw2LJLItYvrOeRIbLUXlbHvd9xVqZ2j9yrzCh0bMYg2/XsdTpnet4Dib/UNy0KsHTfhA0NZfptOy4qSMy0jGyd7oJfM3c5hx61jcOmDR6PfegEQiBxWjHvCt/E5EN0OQPFDBskqiCIW2HN3RHJwCqyKsNo4=
   app: trello-bug-counter
   on:
     repo: lilyfromseattle/trello-bugs
   env:
     global:
-      -  secure: {{ ENCRYPTED_server_uri }}
+    - secure:
+        ? ENCRYPTED_server_uri:
+        :
 notifications:
   email:
     recipients:
     - lilyfpace@gmail.com
     - lily@generalui.com
-  irc: "irc.freenode.org##thejavascripts"
-
+  irc: irc.freenode.org##thejavascripts
 after_deploy:
-  - npm casper-test
-# deploy:
-#   provider: heroku
-#   api_key:
-#     secure: OoUlijdVHfqXuzbic384T0eZdXv5JREbZDB/ueG5VrL9pL5KbxCIY7rZcTfemt3kwcQkBsBmT+5KJPT6exdmu6nkpKdr+VtPCPNf59nCIEdG1SaVPggQmtP97ggqfzH2j7GqJxMO8PcoDzaaF2pCXo6wQlH3skN2TZEzgAd20eU=
-#   app: trello-bug-counter
-#   on:
-#     repo: lilyfromseattle/trello-bugs
+- npm casper-test
