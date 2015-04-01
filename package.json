@@ -24,14 +24,15 @@
   },
   "devDependencies": {
     "casperjs": "^1.1.0-beta3",
+    "grunt": "^0.4.5",
+    "grunt-heroku-deploy": "^0.1.1",
     "mocha": ">= 1.14.0",
     "mocha-casperjs": "^0.5.3"
   },
   "scripts": {
-    "test": "npm run mocha-test && npm run start && npm run casper-test",
+    "test": "npm run mocha-test && grunt heroku-deploy",
     "mocha-test": "mocha test/mocha/test.js",
     "start": "node server",
     "casper-test": "casperjs test/casper/casper_tests.js"
-
   }
 }

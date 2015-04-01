@@ -35,10 +35,10 @@ app.post('/', function(request, response){
   // })
   console.log(table_content);
     var options = {start: JSON.stringify(request.body.startdate).replace(/"/g,""), end: JSON.stringify(request.body.enddate).replace(/"/g,""), stuff: table_content};
-    console.log(options)
+    console.log(options);
     var html = mustache.render(resultsTemplate, options);
     response.send(html);
-    console.log('HELLO')
+    console.log('HELLO');
   });
 });
 
