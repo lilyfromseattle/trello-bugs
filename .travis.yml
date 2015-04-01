@@ -13,12 +13,14 @@ before_install:
 - git checkout tags/1.0.2
 - export PATH=$PATH:`pwd`/bin
 - cd -
-  
+- git branch --set-upstream test-branch heroku/master
+
 before_script:
+- npm run mocha-test
 - phantomjs --version
 - casperjs --version
-after_deploy:
-- casperjs test/casper/casper_tests.js
+- grunt deploy
+
 deploy:
   provider: heroku
   api_key:
