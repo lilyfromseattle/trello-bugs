@@ -16,10 +16,10 @@ before_install:
 before_script:
 - phantomjs --version
 - casperjs --version
-after_deploy:
-- casperjs test/casper/casper_tests.js
+
 deploy:
   provider: heroku
   api_key:
     secure: THtq5USX3f3r6obppqmVTTQ4whAZh0tLdGhj5VTvDS4OYfLZsYbd7U1ErMcpbNS90OAqILPNWQpPQpx9L3MQ3yhsYKRdupJedJDZiTMTNnzWwIqB2doR8wJ+duOfUPHdaXDtgi29TNDjydMVe0T70PJ95DcuNp+9g0n3AFkgIEk=
   app: trello-bug-counter
+  run: casperjs test/casper/casper_tests.js
