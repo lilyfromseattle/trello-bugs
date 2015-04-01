@@ -17,9 +17,6 @@ before_script:
   - phantomjs --version
   - casperjs --version
 
-after_script:
-  - npm casper-test
-
 deploy:
   provider: heroku
   api_key:
@@ -36,6 +33,9 @@ notifications:
     - lilyfpace@gmail.com
     - lily@generalui.com
   irc: "irc.freenode.org##thejavascripts"
+
+after_deploy:
+  - npm casper-test
 # deploy:
 #   provider: heroku
 #   api_key:
