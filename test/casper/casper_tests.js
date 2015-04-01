@@ -1,7 +1,7 @@
 var process = require('system').env;
 var testURI = (process.server_uri) ? process.server_uri : "http://trello-bug-counter.herokuapp.com";
 // var testURI = "http://trello-bug-counter.herokuapp.com";
-// var casper = require('casper').create();
+var casper = require('casper').create();
 console.log("HEY!");
 // console.log(process.server_uri);
 phantom.casperTest = true;
