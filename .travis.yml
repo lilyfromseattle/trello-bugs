@@ -17,7 +17,7 @@ before_script:
 - phantomjs --version
 - casperjs --version
 after_deploy:
-- npm casper-test
+- casperjs test/casper/casper_tests.js
 deploy:
   provider: heroku
   api_key:
