@@ -13,11 +13,11 @@ before_install:
 - git checkout tags/1.0.2
 - export PATH=$PATH:`pwd`/bin
 - cd -
+after_success:
+- casperjs test/casper/casper_tests.js
 before_script:
 - phantomjs --version
 - casperjs --version
-after_deploy:
-- casperjs test/casper/casper_tests.js
 deploy:
   provider: heroku
   api_key:
