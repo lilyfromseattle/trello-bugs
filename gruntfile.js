@@ -27,6 +27,15 @@ module.exports = function(grunt) {
 				    },
 					}
 			  },
+				watch: {
+					express: {
+						files:  [ '**/*.js' ],
+						tasks:  [ 'express:dev' ],
+						options: {
+						spawn: false // for grunt-contrib-watch v0.5.0+, "nospawn: true" for lower versions. Without this option specified express won't be reloaded
+					}
+				}
+			},
 
 		// ghost: {
 		// 	test: {
@@ -68,8 +77,9 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-mocha-test');
 	grunt.loadNpmTasks('grunt-express-server');
 	grunt.loadNpmTasks("grunt-foreman");
-
+	grunt.registerTask('dev', ['rebuild', 'express', 'watch']);
 	grunt.registerTask("serve-express", "express");
+	grunt.registerTask('server', [ 'express:dev', 'watch' ]);
 // grunt.registerTask("serve", "foreman");
   // grunt.registerTask('default', 'mochaTest');
   grunt.registerTask('test', ['mochaTest', 'casperjs']);
