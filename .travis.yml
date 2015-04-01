@@ -17,8 +17,7 @@ before_script:
   - phantomjs --version
   - casperjs --version
   - grunt express:dev
-  -grunt express:dev watch
-
+  - grunt express:dev watch
 deploy:
   provider: heroku
   api_key:
