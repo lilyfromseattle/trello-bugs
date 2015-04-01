@@ -17,6 +17,7 @@ casper.test.begin('Trello Bug counter has working form',9, function suite(test) 
           enddate: 'March 15, 2015',
       }, true);
   });
+  
 
   casper.then(function() {
       this.test.assertTextExists('Total', 'page body contains "total"');
