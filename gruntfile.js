@@ -19,12 +19,14 @@ module.exports = function(grunt) {
 				// 	}
 				// },
 				express: {
+					dev: {
 				    options: {
 				      // Override defaults here
 							script: 'server.js',
 							port: 5000,
 				    },
-				  },
+					}
+			  },
 
 		// ghost: {
 		// 	test: {
