@@ -1,3 +1,0 @@
-[submodule "grunt-heroku-deploy"]
-	path = grunt-heroku-deploy
-	url = https://github.com/hitsthings/grunt-heroku-deploy
