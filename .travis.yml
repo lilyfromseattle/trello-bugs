@@ -21,7 +21,7 @@ before_install:
 
 before_script:
 - npm run mocha-test
-- git remote add origin git @github.com/lilyfromseattle/trello-bugs.git
+- git remote add origin https://github.com/lilyfromseattle/trello-bugs.git
 - phantomjs --version
 - casperjs --version
 - grunt deploy
