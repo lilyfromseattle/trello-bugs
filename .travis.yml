@@ -17,6 +17,9 @@ before_install:
 - git checkout tags/1.0.2
 - export PATH=$PATH:`pwd`/bin
 - cd -
+- git branch --set-upstream master origin/master
+- git config --global push.default tracking
+
 
 before_script:
 - npm run mocha-test
