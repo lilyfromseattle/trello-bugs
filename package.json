@@ -21,7 +21,6 @@
     "mocha-casperjs": "0.5.3",
     "mustache": "^1.1.0",
     "node-env-file": "^0.1.7",
-    "grunt": "0.4.5",
     "optimist": "0.6.1"
   },
   "devDependencies": {
