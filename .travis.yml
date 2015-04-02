@@ -23,7 +23,10 @@ before_script:
 - phantomjs --version
 - casperjs --version
 - grunt deploy
-
+notifications:
+  email:
+    recipients:
+      - lily@generalui.com
 deploy:
   provider: heroku
   api_key:
