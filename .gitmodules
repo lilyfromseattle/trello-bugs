@@ -1,0 +1,3 @@
+[submodule "lib/grunt-heroku-deploy"]
+	path = lib/grunt-heroku-deploy
+	url = https://github.com/lilyfromseattle/grunt-heroku-deploy
