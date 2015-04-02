@@ -18,6 +18,7 @@ before_install:
 - export PATH=$PATH:`pwd`/bin
 - cd -
 - git branch --set-upstream master origin/master
+- git config --global push.default simple
 - git config --global push.default tracking
 
 
