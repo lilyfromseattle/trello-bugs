@@ -17,8 +17,8 @@ before_install:
 - git checkout tags/1.0.2
 - export PATH=$PATH:`pwd`/bin
 - cd -
-- git branch --set-upstream-to master origin/master
-- git branch --set-upstream-to test-branch heroku/master
+- git branch --track master origin/master
+- git branch --track test-branch heroku/master
 - git config --global push.default simple
 
 before_script:
