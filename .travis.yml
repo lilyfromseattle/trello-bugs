@@ -17,11 +17,9 @@ before_install:
 - git checkout tags/1.0.2
 - export PATH=$PATH:`pwd`/bin
 - cd -
-- git branch test-branch
 
 before_script:
 - npm run mocha-test
-- git remote add origin https://github.com/lilyfromseattle/trello-bugs.git
 - phantomjs --version
 - casperjs --version
 - grunt deploy
