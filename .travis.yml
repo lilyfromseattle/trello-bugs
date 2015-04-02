@@ -9,6 +9,7 @@ before_install:
 - npm install -g grunt-cli
 - npm install -g mustache
 - npm install -g grunt
+- npm install -g mocha
 - npm install
 - npm update
 - git clone git://github.com/n1k0/casperjs.git ~/casperjs
