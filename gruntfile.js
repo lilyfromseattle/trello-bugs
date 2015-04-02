@@ -3,13 +3,12 @@
 module.exports = function(grunt) {
   grunt.initConfig({
       'heroku-deploy' : {
-        deployBranch: 'test-branch'
-          // production : {
-          //     deployBranch : 'prod'
-          // },
-          // staging : {
-          //     deployBranch : 'staging'
-          // }
+          production : {
+              deployBranch : 'test-branch'
+          },
+          staging : {
+              deployBranch : 'test-branch'
+          }
       }
   });
 
