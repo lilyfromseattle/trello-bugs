@@ -22,11 +22,14 @@ before_install:
 - git branch --set-upstream test-branch heroku/master
 - git config --global push.default simple
 
+env:
+  global:
+    - APP_NAME=trello-bug-counter
 before_script:
 - npm run mocha-test
 - phantomjs --version
 - casperjs --version
-- grunt deploy
+- git push -f git@heroku.com:$APP_NAME.git master
 notifications:
   email:
     recipients:
