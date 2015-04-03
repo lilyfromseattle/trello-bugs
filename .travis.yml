@@ -25,6 +25,7 @@ before_script:
 - npm run mocha-test
 - phantomjs --version
 - casperjs --version
+- git remote -v | grep ^heroku || heroku git:remote --ssh-git --app $APP_NAME
 - git push -f git@heroku.com:$APP_NAME.git master
 
 notifications:
