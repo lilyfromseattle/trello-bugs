@@ -25,7 +25,6 @@ before_script:
 - npm run mocha-test
 - phantomjs --version
 - casperjs --version
-- heroku keys:add
 - git push -f git@heroku.com:$APP_NAME.git master
 - yes
 notifications:
