@@ -14,7 +14,6 @@ env:
       - secure: eeIr1caawFrhMwBXuof7VeZYDnjhACfoIZUKjXUn/SiQg9peTZvdrz9VSwtzJ2iX2NMKGoT968QOk9atSnzRXOoCLLlR833d3nfUBeg3pS71WqeiJ/4IxB72f3FdqGGh65LBDSJN3qIKiFN85WvD4Piw9vUhTq64RAppVRPadamdE36jqtMdYKvgnXF6jAbkIvPqqfh2rdMeOXYoEgQ3JoTSO3CWEnvz4lZ3x5hhVsZw1A4i6+ePD9yj4vPgAMudpDngDfnCaiRq2UTuzHED1A0r32KwOX2FIOskI3E/4tn93G5ccYuAZEtJIV0OgJ2B6yL5mA0GVH4ecIFBkL4brA==
 before_install:
   - npm install
-  - which heroku || wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
 before_script:
   - mkdir -p shippable/testresults
