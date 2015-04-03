@@ -11,6 +11,7 @@ env:
       - CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage
       - XUNIT_FILE=shippable/testresults/result.xml
       - APP_NAME=trello-bug-counter
+      - secure: dN/qAYg+0rvq5fCoy621E93fKyN26drBR7J68+eebl4uTHusjXOYrKDnl/NSyZzzej0AWOFr2TBGYzraP0BLZnYiI/Wzt9B36Po0I1EUJG6UqlK29OQouiUugxhGTrfmiUewmmt/UoO55bEEQjEnDZvNRI6+QDCN1880u7Y4hjtr2mxMHlbGwjRaOAoLF0sRL8G3sACmTMdMGf3UsLZRflvCX6LS0eFU6KECTGCrJU9+ceXjC4kQI8dXjEh8nE8wdRjnRUZWsrxD5VvMlOajWzC88c9TxyTRhXZ0Owq/zRlU9l9vYuoDFoL9zbYkNhY/UvIhwhz2k8UdyG+KRV7eaQ==
 
 # Create directories for test and coverage reports
 before_install:
@@ -22,7 +23,6 @@ before_script:
 
 script:
   - npm run mocha-test
-  - heroku keys:add
   - git push -f git@heroku.com:$APP_NAME.git master
   - npm run casper-test
 # Running the tests with grunt
