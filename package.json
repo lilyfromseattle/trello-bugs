@@ -27,7 +27,10 @@
   "devDependencies": {
     "casperjs": "^1.1.0-beta3",
     "mocha": ">= 1.14.0",
-    "mocha-casperjs": "^0.5.3"
+    "mocha-casperjs": "^0.5.3",
+    "superagent": "^0.18.0",
+    "xunit-file": "0.0.5",
+    "istanbul": "^0.2.9"
   },
   "scripts": {
     "test": "npm run casper-test",
