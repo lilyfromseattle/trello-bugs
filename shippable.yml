@@ -11,7 +11,7 @@ env:
       - CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage
       - XUNIT_FILE=shippable/testresults/result.xml
       - APP_NAME=trello-bug-counter
-      - secure: THtq5USX3f3r6obppqmVTTQ4whAZh0tLdGhj5VTvDS4OYfLZsYbd7U1ErMcpbNS90OAqILPNWQpPQpx9L3MQ3yhsYKRdupJedJDZiTMTNnzWwIqB2doR8wJ+duOfUPHdaXDtgi29TNDjydMVe0T70PJ95DcuNp+9g0n3AFkgIEk=
+      - secure: fp8WdXzc30c6nj1WesQmndYty+RWClPdwymuLT+HroMeTl5ccpfEa6FZyQN7zqZsm+TpZOwCWVbiqQoEvUMjMCVuz0XomEKZL+41J91JZ5SonrFikdoc9C/BgdKJsAurCuQi1QHN9h0bihfetAqQaDC/nMEhYYUfOHb61/XtZSMXQv9Iqs9o8B7YYgqz3BNS3HpYBiNcUWVNm9P0Er9xdm3jhiTJqusOrHFtn8z682Ld27PMMLlL4aEh0cfLWtGs4bIl5SpJHaKz2KfQ8gWnxcHgB4whMAJXSKTEmmBOw300py8lXQmL/QE024idtETVgTT8ur9br8/igWZa0PPp5g==
 before_install:
   - npm install
   - which heroku || wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
