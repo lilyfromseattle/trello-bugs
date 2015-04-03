@@ -82,7 +82,7 @@ describe('test filterCards', function(){
        var results = trello.filterCards(test.inputs.start, test.inputs.end, test.inputs.cards);
 
        it('should only return cards within the date range given', function(){
-            assert.equal(3, test.outputs[key][0] == results[key][0]);
+            assert.equal(1, test.outputs[key][0] == results[key][0]);
         });
 
       });
