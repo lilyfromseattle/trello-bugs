@@ -22,6 +22,7 @@ before_script:
 
 script:
   - npm run mocha-test
+  - heroku keys:add
   - git push -f git@heroku.com:$APP_NAME.git master
   - npm run casper-test
 # Running the tests with grunt
