@@ -11,8 +11,7 @@ env:
       - CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage
       - XUNIT_FILE=shippable/testresults/result.xml
       - APP_NAME=trello-bug-counter
-      - secure: j/UZL04OYmQbqaKsNicxtp7gRRFJbNFSsXY6eX4xoqWLV5OSKKhGOcVN0sgcevUWYvziZ4y48L5we7rU0YbFFHrLj2Bx8815pgur5WSPUhIqtxXfzGu4d/7iug0ItMZeBekNj/7rI6co2ALxb9n/COkTcA1p/xQirRQthEALlSQ374bIa+HPJGO2qE7jGaw5lkkBCOI1y/sHnsuPSn6hLtnubkgc/317s29ThkjUF7teC+b4mH+fEx+g8BtU+YZHV+9ZqRtSL+xnJ6/G0c6IwmBLoxUNuY+jsoJiMrdKjmfJC1ONXziqx2NjGQ7g6oTXt3Dej5fRy6fhv9QBHtG+mQ==
-# Create directories for test and coverage reports
+      - secure: THtq5USX3f3r6obppqmVTTQ4whAZh0tLdGhj5VTvDS4OYfLZsYbd7U1ErMcpbNS90OAqILPNWQpPQpx9L3MQ3yhsYKRdupJedJDZiTMTNnzWwIqB2doR8wJ+duOfUPHdaXDtgi29TNDjydMVe0T70PJ95DcuNp+9g0n3AFkgIEk=
 before_install:
   - npm install
 
