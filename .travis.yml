@@ -34,5 +34,5 @@ notifications:
 deploy:
   provider: heroku
   api_key:
-    secure: THtq5USX3f3r6obppqmVTTQ4whAZh0tLdGhj5VTvDS4OYfLZsYbd7U1ErMcpbNS90OAqILPNWQpPQpx9L3MQ3yhsYKRdupJedJDZiTMTNnzWwIqB2doR8wJ+duOfUPHdaXDtgi29TNDjydMVe0T70PJ95DcuNp+9g0n3AFkgIEk=
+    secure: q6tc0IMlKFtJAuKipRwHb/xSqbCOIsgUcJPKyumQgXrT5jrrgP89vvJA3Nv6pcs38aZpRs87E68QDPs3XS3h7lKy7cszs8Vx550H6hW5TNAnsNPehHh+NkaZSikfJ05Nq0/Q2ZvdP7l5IDSi/sFiSX6mlimQbcvRSxV8xlbfEY9gJhqHLCrfK3ILWSmfZJ2T98mf5ZD9+I181+K6umzwO7rysylX1WrSOC+ShohgRzrYno3wDcalJiep+E5I5Yj0QtSue25yjqt5CMC75TAOgsickBDA1hP8b1Cbq+rsjolyFMqXSsrNoudDaugoa4MP/kJBivbqMtkybpR7LnWWdg==
   app: trello-bug-counter
