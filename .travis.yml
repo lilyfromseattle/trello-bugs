@@ -17,6 +17,7 @@ before_install:
 - git checkout tags/1.0.2
 - export PATH=$PATH:`pwd`/bin
 - cd -
+- which heroku || wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
 env:
   global:
